@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    session 4 //
+    <h1>hi there</h1>
+    <ul id="name">
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+      <li>four</li>
+      <li>five</li>
+    </ul>
+    <p>this is a beautiful paragraph</p>
+    <p>this is another paragraph</p>
+    <div class="introduction">
+      hey this is shubham living on earth 3.0
+    </div>
+    <div class="fourth">
+      hi there this is shubhank living on cera 5.0
+    </div>
+    <script>
+      console.log("hey this code sand box");
+
+      // Methods
+
+      // 1. getElementById  only 1 element.id is unique.
+
+      let nameListElement = document.getElementById("name");
+      console.log(nameListElement);
+
+      //2. getElementsByTagName ;tag here taken <p>;  'array like' html collection
+
+      let paragraphList = document.getElementsByTagName("p");
+      let paragraphListArray = Array.from(paragraphList); //array like tha ,isko array bana dala;
+      console.log(paragraphList);
+      console.log(paragraphListArray);
+
+      //3. QuerySelector;
+      const introduction = document.querySelector(".introduction");
+      console.log(introduction);
+
+      //4. getElementByClassName ;
+
+      let introClass = document.getElementsByClassName("fourth");
+      console.log(introClass);
+
+      // ==================
+
+      function init() {
+        console.log("page loaded");
+      }
+      init(); //function called hence printed;
+    </script>
+  </body>
+</html>
